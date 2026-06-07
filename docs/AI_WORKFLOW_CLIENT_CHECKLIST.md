@@ -45,4 +45,4 @@ Work is valuable only if it improves at least one:
 - reusable system
 - marketable skill
 - operational efficiency
-- compounding toward the larger dream
+- long-term project value

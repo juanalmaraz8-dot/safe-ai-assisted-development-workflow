@@ -1,31 +1,35 @@
 # Safe AI-Assisted Development Workflow
 ## Summary
-This project demonstrates a local AI-assisted development workflow built around safety, human approval, testing, git history, and recoverable checkpoints.
+This repository demonstrates a controlled workflow for using AI on small code and documentation projects without losing human review, test discipline, or clean git history.
 ## Core workflow
 plan → sandbox edit → test → diff review → approval → source apply → source test → git commit → checkpoint
 ## Problem solved
-AI coding tools can be useful, but they can also edit too much, invent details, skip tests, bypass review, or leave unclear project history. This workflow keeps AI-assisted work controlled and reviewable.
-## Tools used
-- RealityOS for planning, logs, checkpoints, and continuity
-- AI Runner for controlled repo workflow
-- Aider + Ollama for local AI-assisted development
-- Git for commit history and recovery
-- Godot project as real proof repo
-## Proof artifact
-Ancient Machine Ruins was improved from a basic prototype into a documented first-playable portfolio artifact using the workflow.
-## Evidence
-- bad AI plan rejected
-- destructive rewrite rejected
-- sandbox diffs reviewed before source apply
-- tests run before and after apply
-- accepted changes committed with git
-- portfolio package created
+AI coding tools can be useful, but they can also create risk:
+- too many edits at once
+- invented details
+- skipped tests
+- unclear diffs
+- weak review process
+- messy project history
+This workflow keeps AI-assisted work scoped, reviewable, and recoverable.
+## Public proof included
+The included `repo_cleanup_demo` proof shows a small client-style documentation cleanup:
+- before README: unclear purpose and missing run/test instructions
+- after README: clearer purpose, file list, run command, test command, and workflow note
+- visible patch included
+- proof case study included
+## Repository structure
+- `docs/AI_WORKFLOW_SERVICE_ONE_PAGER.md`: short service explanation
+- `docs/AI_WORKFLOW_CLIENT_CHECKLIST.md`: reusable client-work checklist
+- `docs/AI_WORKFLOW_SERVICE_PROFILE_BLURBS.md`: profile and service blurbs
+- `proofs/repo_cleanup_demo/`: before/after proof files
+- `PUBLIC_SAFETY_REVIEW_REPORT.md`: public-safety review
 ## Skills demonstrated
-- local AI-assisted development
-- safe repo workflow design
-- technical documentation
-- Git/test/checkpoint discipline
-- Godot/GDScript prototype work
-- reusable automation process
+- AI-assisted workflow design
+- sandbox-first change process
+- test-backed documentation cleanup
+- git history discipline
+- before/after case proof
+- technical writing for small projects
 ## Service angle
 I can help small projects use AI safely by inspecting the repo, planning changes, editing in a sandbox, running tests, showing diffs, applying only approved changes, and leaving behind documentation plus clean project history.
