@@ -21,6 +21,16 @@ The included `repo_cleanup_demo` proof shows a small client-style documentation 
 - visible patch included
 - proof case study included
 
+## Real session example: rejected destructive rewrite
+
+During a documented session on June 7, the AI proposed a README rewrite that removed the majority of an existing documentation file — replacing a detailed workflow reference with a condensed summary. The logged diff showed the change before anything touched the source: a net loss of approximately 95 lines of structured content (safety rules, review queues, command references, and workflow paths) replaced by 26 lines.
+
+The diff review gate exposed it. Rejection reason logged: "deleted too much existing useful documentation; reject destructive rewrite before source apply."
+
+The source file was never modified.
+
+This is what the approval gate is for. The AI produced a plausible-looking change. The diff made the real impact visible. Human judgment stopped it.
+
 ## Repository structure
 - `docs/AI_WORKFLOW_SERVICE_ONE_PAGER.md`: short service explanation
 - `docs/AI_WORKFLOW_CLIENT_CHECKLIST.md`: reusable client-work checklist
